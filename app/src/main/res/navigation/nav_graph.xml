@@ -3,13 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/productsFragment">
+    app:startDestination="@id/loginFragment">
 
     <fragment
         android:id="@+id/productsFragment"
         android:name="com.guerrero.melichallenge.products.view.ProductsFragment"
         android:label="fragment_products"
-        tools:layout="@layout/fragment_products" >
+        tools:layout="@layout/fragment_products">
+
         <action
             android:id="@+id/action_productsFragment_to_detailFragment"
             app:destination="@id/detailFragment" />
@@ -20,4 +21,14 @@
         android:name="com.guerrero.melichallenge.detail.view.DetailFragment"
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.guerrero.melichallenge.login.view.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_productsFragment"
+            app:destination="@id/productsFragment" />
+    </fragment>
+
 </navigation>

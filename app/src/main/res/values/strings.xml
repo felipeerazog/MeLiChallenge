@@ -2,4 +2,8 @@
     <string name="app_name">MeLiChallenge</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_hint">Search Motorola G6…</string>
+    <string name="search_action">Buscar</string>
+    <string name="login">Login</string>
+    <string name="details_action">Details</string>
 </resources>
